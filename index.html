@@ -1,0 +1,1144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#111f39">
+<title>Career Clarity Blueprint</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap');
+  :root{--navy:#101e38;--navy2:#172640;--gold:#f4bd4d;--cream:#fff8ed;--muted:#d2d9e5}
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0;
+    background:var(--navy);color:var(--cream);
+    font-family:"DM Sans",Arial,sans-serif
+  }
+  .offer-head
+  {
+    min-height:273px;
+    padding:13px 20px 42px;
+    text-align:center;
+    background:linear-gradient(180deg,#2b2f37 0%,#242c3b 58%,#1b263b 100%)
+  }
+  .offer-pill,.eyebrow{display:inline-flex;align-items:center;justify-content:center;gap:10px;border:1px solid #8b6b2e;color:#ffbd39;border-radius:999px;letter-spacing:.13em;font-size:15px;font-weight:700;padding:9px 25px}
+  .offer-pill{margin-bottom:19px;background:#ffffff08}
+  .kicker{font-family:"Playfair Display",Georgia,serif;font-size:23px;font-weight:700;margin:0 0 20px}
+  .offer-status{font-family:"Playfair Display",Georgia,serif;color:var(--gold);font-size:clamp(32px,3.1vw,46px);font-weight:800;line-height:1.15;margin:0 0 20px}
+  .date-line{display:flex;align-items:center;justify-content:center;gap:12px;color:#d7deeb;font-size:19px}
+  .date-line .dot{width:9px;height:9px;background:#eab23f;border-radius:50%}
+ 
+.announcement {
+  background: #073b4c;
+  color: #fff;
+  text-align: center;
+  padding: 12px 15px;
+  font-size: 15px;
+  font-weight: 500;
+  position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.announcement del {
+  color: #ddd;
+  margin: 0 5px;
+}
+
+.announcement strong {
+  color: #ffd166;
+  font-size: 18px;
+  margin: 0 4px;
+}
+
+.countdown {
+  display: inline-block;
+  margin-left: 10px;
+  font-weight: 600;
+}
+
+#countdown {
+  color: #ffd166;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Mobile responsive */
+@media (max-width: 480px) {
+  .announcement {
+    font-size: 12px;
+    padding: 10px;
+    line-height: 1.8;
+  }
+
+  .countdown {
+    display: block;
+    margin-left: 0;
+  }
+}
+
+  .hero{position:relative;isolation:isolate;overflow:hidden;min-height:640px;background:linear-gradient(90deg,rgba(14,28,52,.94) 0%,rgba(15,29,53,.86) 48%,rgba(15,29,53,.94) 100%),radial-gradient(ellipse at 50% 20%,#3b4b64 0%,#15243e 68%)}
+  .hero:before{content:"";position:absolute;inset:0;z-index:-1;opacity:.16;background:linear-gradient(90deg,transparent 0 9%,#53617a 9.2% 32%,transparent 32.2% 42%,#53617a 42.2% 65%,transparent 65.2% 100%);filter:blur(2px)}
+  .hero-inner{width:min(1508px,100%);min-height:640px;margin:auto;padding:86px 24px 70px;display:grid;grid-template-columns:minmax(0,1.2fr) minmax(320px,.8fr);align-items:center;gap:36px}
+  .hero-copy{max-width:790px}
+  .eyebrow{font-size:16px;letter-spacing:.1em;padding:8px 18px;margin-bottom:27px}
+  h1{font-family:"Playfair Display",Georgia,serif;font-size:clamp(42px,4.15vw,78px);font-weight:800;letter-spacing:-.035em;line-height:1.12;margin:0 0 25px;color:#fff8ed}
+  h1 .gold{color:var(--gold)}
+  .subtitle{max-width:650px;color:#d8dfeb;font-size:clamp(17px,1.3vw,21px);line-height:1.75;margin:0 0 30px}
+  .benefits{list-style:none;margin:0 0 32px;padding:0;display:grid;gap:13px;color:#f3f4f7;font-size:17px}
+  .benefits li{display:flex;gap:12px;align-items:flex-start}
+  .check{color:var(--gold);font-weight:800}
+  .cta-row{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+  .btn{display:inline-flex;justify-content:center;align-items:center;gap:10px;min-height:54px;padding:15px 24px;border-radius:9px;text-decoration:none;font:700 16px "DM Sans",Arial,sans-serif;transition:transform .2s,box-shadow .2s}
+  .btn:hover{transform:translateY(-2px)}
+  .btn-primary{background:linear-gradient(135deg,#ffd36d,#edaa2e);color:#152039;box-shadow:0 10px 25px #0003}
+  .btn-secondary{border:1px solid #8190a8;color:#fff;background:#ffffff0a}
+  .price-note{margin-top:14px;font-size:13px;color:#bfc9d9}
+
+.product-wrap {
+  width: 100%;
+  max-width: 550px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 16px;
+}
+
+.book-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  object-position: center;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .product-wrap {
+    max-width: 480px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .product-wrap {
+    max-width: 100%;
+    border-radius: 10px;
+  }
+}
+
+  .book{position:relative;width:min(360px,82%);aspect-ratio:.72;transform:perspective(1100px) rotateY(-9deg) rotateZ(1deg);border:1px solid #66768a;border-radius:5px 10px 10px 5px;background:linear-gradient(115deg,#07172b,#102b4b 54%,#07172a);box-shadow:24px 28px 42px #0007,inset 7px 0 0 #07101d;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:32px 24px;text-align:center}
+  .book:before{content:"";position:absolute;inset:12px;border:1px solid #b98c37;border-radius:2px;pointer-events:none}
+  .book:after{content:"";position:absolute;left:14px;top:0;bottom:0;width:12px;border-left:1px solid #d4a943;border-right:1px solid #253d58;background:linear-gradient(90deg,#07101c,#16304b);transform:translateX(-10px) skewY(-1deg)}
+  .book-symbol{width:100px;height:100px;border:2px solid var(--gold);border-radius:50%;display:grid;place-items:center;font-size:46px;color:var(--gold);margin-bottom:28px}
+  .book-title{font-family:"Playfair Display",Georgia,serif;color:#ffd16b;font-size:clamp(30px,3vw,43px);line-height:1.15}
+  .book-sub{margin-top:20px;letter-spacing:.18em;color:#e8c56d;font-size:12px}
+  .book-lines{position:absolute;inset:25% 16%;opacity:.45;background:linear-gradient(145deg,transparent 49.5%,#e2b94e 50%,transparent 50.5%),linear-gradient(35deg,transparent 49.5%,#e2b94e 50%,transparent 50.5%);pointer-events:none}
+  .below{padding:70px 24px;text-align:center;background:#0d192e}
+  .below h2{font:700 clamp(28px,3vw,42px) "Playfair Display",Georgia,serif;margin:0 0 14px}
+  .below p{max-width:650px;margin:0 auto;color:var(--muted);line-height:1.7}
+
+
+
+
+
+
+
+
+
+  /* Tenth section: transparent purchase information */
+  .transparency-section{background:#fbf6ec;color:#111b2b;padding:76px 24px 96px}
+  .transparency-card{width:min(1104px,100%);margin:0 auto;padding:48px 47px 44px;background:#fff;border:1px solid #e4ded4;border-radius:29px;box-shadow:0 3px 5px #14203308,0 14px 34px #1420330c}
+  .transparency-heading{display:flex;align-items:center;gap:19px;margin-bottom:25px}
+  .transparency-icon{flex:0 0 36px;width:36px;height:36px;color:#f0b338;display:flex;align-items:center;justify-content:center}
+  .transparency-icon svg{width:36px;height:36px;display:block}
+  .transparency-heading h2{font-family:"Playfair Display",Georgia,serif;font-size:clamp(28px,2.2vw,38px);line-height:1.25;letter-spacing:-.02em;margin:0;color:#111b2b}
+  .transparency-lead,.transparency-copy{font-size:clamp(17px,1.25vw,22px);line-height:1.65;color:#52647b}
+  .transparency-lead{margin:0 0 25px}
+  .transparency-copy{margin:0}
+  .transparency-copy a{color:#111b2b;text-decoration:underline;text-underline-offset:3px;overflow-wrap:anywhere}
+
+  /* Ninth section: full-width checkout area with centered card */
+  .checkout-section{background:#fbf9f3;color:#111b2b;padding:76px 24px 90px;display:flex;justify-content:center;align-items:flex-start}
+  .checkout-card{
+    width:min(700px,100%);
+    background:#fff;
+    border:1px solid #e4ded4;
+    border-radius:24px;
+    overflow:hidden;
+    box-shadow:0 20px 55px #14203314
+  }
+  .checkout-header{background:#111f39;color:#fff8ed;text-align:center;padding:25px 25px 23px}
+  .checkout-header h2{font-family:"Playfair Display",Georgia,serif;font-size:clamp(24px,2vw,31px);line-height:1.2;margin:0 auto 18px;max-width:390px}
+  .checkout-price{display:flex;align-items:baseline;justify-content:center;gap:13px}
+  .checkout-price del{font-size:16px;color:#aebbd0}
+  .checkout-price strong{font-family:"Playfair Display",Georgia,serif;font-size:clamp(42px,4vw,52px);line-height:1;color:#f4bd4d}
+  .checkout-header>p{font-size:14px;color:#cbd4e2;margin:8px 0 0}
+  .checkout-body{padding:26px 29px 24px}
+  .offer-ended{display:flex;flex-direction:column;align-items:center;text-align:center;gap:9px;background:#f3eee4;border:1px solid #e3ddd2;border-radius:16px;padding:16px 13px;margin-bottom:16px}
+  .offer-ended-label{font-size:11px;letter-spacing:.13em;color:#526078}
+  .offer-ended strong{font-size:14px;font-weight:600;line-height:1.4;color:#111b2b}
+  .offer-ended small{font-size:11px;color:#718096}
+  .checkout-benefits{list-style:none;padding:0;margin:0 0 18px;display:grid;gap:10px}
+  .checkout-benefits li{display:flex;align-items:flex-start;gap:10px;font-size:14px;line-height:1.45;color:#25334a}
+  .checkout-benefits li span{color:#f0a72c;font-size:18px;line-height:1;flex:0 0 15px}
+  .checkout-cta{display:flex;align-items:center;justify-content:center;text-align:center;min-height:58px;padding:15px 18px;border-radius:15px;background:#f3b941;color:#111f39;text-decoration:none;font-size:15px;font-weight:700;box-shadow:0 10px 25px #dca52b2e;transition:transform .2s,background .2s;margin-bottom:15px}
+  .checkout-cta:hover{transform:translateY(-1px);background:#ffca55}
+  .payment-panel{background:#f8f5ef;border:1px solid #e5ded2;border-radius:20px;padding:12px 11px 11px}
+  .payment-title{display:flex;align-items:center;justify-content:center;gap:7px;color:#526078;font-size:10px;letter-spacing:.04em;margin:0 0 12px}
+  .payment-title span{color:#f0a72c;font-size:14px}
+  .payment-tabs{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:4px;padding:5px;background:#fff;border-radius:15px;margin-bottom:11px}
+  .payment-tab{border:0;border-radius:12px;background:transparent;color:#526078;min-width:0;min-height:53px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;font:500 11px "DM Sans",Arial,sans-serif;cursor:pointer}
+  .payment-tab span{font-size:16px;line-height:1}
+  .payment-tab.is-active{background:#111f39;color:#fff;box-shadow:0 2px 5px #111f3926}
+  .payment-tab:focus-visible{outline:2px solid #f0a72c;outline-offset:2px}
+  .payment-detail{background:#fff;border:1px solid #e5ded2;border-radius:15px;padding:13px 10px 12px;text-align:center}
+  .payment-detail p{font-size:12px;line-height:1.5;margin:0 0 10px;color:#25334a}
+  .payment-brands{display:flex;justify-content:center;align-items:center;gap:5px;flex-wrap:wrap}
+  .payment-brands span{border:1px solid #e5ded2;border-radius:10px;background:#fbf9f3;padding:6px 8px;font-size:10px;color:#526078;white-space:nowrap}
+  .checkout-secure{text-align:center;color:#718096;font-size:12px;margin:16px 0 0}
+  .checkout-redirect{text-align:center;color:#718096;font-size:11px;line-height:1.5;margin:14px 0 0}
+  @media(min-width:900px){
+    .checkout-header{padding:30px 35px 26px}
+    .checkout-body{padding:30px 34px 26px;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);column-gap:28px;align-items:start}
+    .offer-ended{grid-column:1 / -1}
+    .checkout-benefits{grid-column:1;grid-row:2 / span 2;margin:6px 0 0}
+    .checkout-cta{grid-column:2;grid-row:2;margin-bottom:14px}
+    .payment-panel{grid-column:2;grid-row:3}
+    .checkout-secure,.checkout-redirect{grid-column:1 / -1}
+  }
+
+  /* Eighth section: product value and pricing */
+  .value-section{background:#fbf6ec;color:#141d2b;padding:76px 24px 84px}
+  .value-inner{width:min(1098px,100%);margin:0 auto}
+  .value-inner>h2{font-family:"Playfair Display",Georgia,serif;font-size:clamp(36px,3.2vw,56px);line-height:1.2;letter-spacing:-.025em;margin:0 0 38px;font-weight:800;color:#141d2b}
+  .value-list{overflow:hidden;background:#fff;border:1px solid #e4ded4;border-radius:27px;box-shadow:0 3px 5px #14203308,0 14px 34px #1420330c}
+  .value-row{min-height:78px;padding:20px 24px;display:flex;align-items:center;justify-content:space-between;gap:24px;border-bottom:1px solid #e4ded4;font-size:clamp(16px,1.15vw,21px);line-height:1.45;color:#111b2b}
+  .value-row:last-child{border-bottom:0}
+  .value-amount{flex:0 0 auto;color:#52647b;white-space:nowrap}
+  .value-unpublished{font-style:italic}
+  .value-summary{margin-top:24px;background:#111f39;color:#d5deea;border-radius:27px;padding:31px 29px 27px}
+  .value-total,.value-today{display:flex;align-items:center;justify-content:space-between;gap:20px}
+  .value-total{padding-bottom:21px;border-bottom:1px solid #344158;font-size:clamp(16px,1.15vw,21px)}
+  .value-strike{font-family:"Playfair Display",Georgia,serif;font-size:clamp(21px,1.6vw,29px);font-weight:700;color:#fff8ed;text-decoration:line-through;text-decoration-color:#f4bd4d;text-decoration-thickness:2px}
+  .value-today{padding-top:19px;font-size:clamp(16px,1.15vw,21px)}
+  .value-today strong{font-family:"Playfair Display",Georgia,serif;font-size:clamp(38px,3vw,52px);line-height:1;color:#f4bd4d}
+  .value-summary p{margin:23px 0 0;font-size:16px;line-height:1.5;color:#aebbd0}
+
+  /* Seventh section: testimonials */
+  .testimonials-section{background:#fbf9f3;color:#141d2b;padding:76px 24px 96px}
+  .testimonials-inner{width:min(1324px,100%);margin:0 auto}
+  .testimonials-inner>h2{font-family:"Playfair Display",Georgia,serif;font-size:clamp(36px,3.15vw,56px);line-height:1.2;letter-spacing:-.025em;font-weight:800;color:#141d2b;margin:0 0 50px}
+  .testimonial-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+  .testimonial-card{min-width:0;min-height:300px;padding:29px 30px 27px;background:#fff;border:1px solid #e4ded4;border-radius:25px;box-shadow:0 3px 5px #14203308,0 14px 34px #1420330c;display:flex;flex-direction:column;align-items:flex-start}
+  .testimonial-stars{font-size:26px;letter-spacing:2px;line-height:1;color:#f4b53d;margin-bottom:21px}
+  .testimonial-card blockquote{font-size:clamp(16px,1.15vw,21px);line-height:1.65;color:#111b2b;margin:0 0 25px;padding:0}
+  .testimonial-byline{font-size:16px;line-height:1.5;color:#52647b;margin:auto 0 5px}
+  .testimonial-note{font-size:15px;line-height:1.5;color:#52647b;font-style:italic;margin:0}
+
+  /* Sixth section: preview pages */
+  .preview-section{background:#fbf6ec;color:#141d2b;padding:72px 24px 82px}
+  .preview-inner{width:min(1324px,100%);margin:0 auto}
+  .preview-heading{display:flex;align-items:center;gap:20px;flex-wrap:wrap;margin-bottom:47px}
+  .preview-heading h2{font-family:"Playfair Display",Georgia,serif;font-size:clamp(38px,3.2vw,56px);line-height:1.15;letter-spacing:-.025em;margin:0 0 20px;color:#141d2b;font-weight:800}
+  .preview-heading p{font-size:clamp(16px,1.2vw,21px);line-height:1.55;color:#52647b;margin:0}
+  .preview-badge{display:inline-flex;align-items:center;justify-content:center;padding:10px 18px;border:1px solid #e5ded2;background:#fff;border-radius:999px;text-decoration:none;color:#526078;font-size:14px;letter-spacing:.02em;white-space:nowrap;transition:background .2s,transform .2s}
+  .preview-badge:hover{background:#fff8e9;transform:translateY(-1px)}
+  .preview-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px}
+  .preview-card{min-width:0;min-height:auto;padding:25px 24px;background:#fff;border:1px solid #e4ded4;border-radius:19px;box-shadow:0 3px 5px #14203308,0 14px 34px #1420330c}
+  .preview-label{display:block;font-size:14px;letter-spacing:.12em;font-weight:600;color:#f0a72c;margin-bottom:17px}
+  .preview-card h3{font-family:"Playfair Display",Georgia,serif;font-size:clamp(19px,1.3vw,25px);line-height:1.35;color:#111b2b;margin:0 0 18px}
+  .preview-card ul{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+  .preview-card li{border-left:3px solid #e4ded4;padding:2px 0 2px 12px;font-size:clamp(15px,1vw,18px);line-height:1.55;color:#52647b}
+
+  /* Fifth section: audience fit */
+  .audience-section{background:#fbf9f3;color:#141d2b;padding:72px 24px 86px}
+  .audience-inner{width:min(1320px,100%);margin:0 auto;display:grid;grid-template-columns:minmax(0,1.5fr) minmax(330px,.95fr);gap:clamp(38px,6vw,100px);align-items:start}
+  .audience-main h2{font-family:"Playfair Display",Georgia,serif;font-size:clamp(36px,3.2vw,56px);line-height:1.18;letter-spacing:-.025em;margin:0 0 36px;font-weight:800;color:#141d2b}
+  .audience-list{display:grid;gap:17px;list-style:none;padding:0;margin:0}
+  .audience-list li{display:flex;align-items:flex-start;gap:20px;font-size:clamp(16px,1.25vw,22px);line-height:1.5;color:#101c30}
+  .audience-check{color:#229957;font-size:24px;line-height:1.25;font-weight:500;flex:0 0 22px}
+  .audience-note{background:#f3eee4;border:1px solid #e3ddd2;border-radius:30px;padding:32px 30px;min-height:410px}
+  .audience-note h3{display:flex;align-items:center;gap:14px;font-family:"Playfair Display",Georgia,serif;font-size:clamp(20px,1.4vw,26px);line-height:1.35;margin:0 0 24px;color:#111b2b}
+  .audience-info{width:22px;height:22px;display:inline-grid;place-items:center;border:2px solid #657084;border-radius:50%;font:600 14px Arial,sans-serif;color:#526078;flex:0 0 22px}
+  .audience-note p{font-size:clamp(16px,1.2vw,21px);line-height:1.7;color:#52647b;margin:0 0 20px}
+  .audience-note p:last-child{margin-bottom:0}
+
+  /* Fourth section: blueprint contents */
+  .blueprint-section{
+    background:#fbf6ec;
+    color:#141d2b;
+    padding:4px 54px 90px;
+    padding-top: 80px;
+}
+  .blueprint-inner{width:min(1512px,100%);margin:0 auto}
+  .blueprint-inner>h2{font-family:"Playfair Display",Georgia,serif;font-size:clamp(36px,3vw,54px);line-height:1.2;letter-spacing:-.025em;margin:0 0 50px;font-weight:800;color:#141d2b}
+  .blueprint-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+  .blueprint-card{display:grid;
+    grid-template-columns:auto minmax(0,1fr);
+    align-items:start;gap:23px;
+    min-height:150px;
+    padding:28px 29px;
+    min-width: 200px;
+    background:#fff;
+    border:1px solid #e5ded2;
+    border-radius:24px;
+    box-shadow:0 3px 5px #14203308,0 14px 34px #1420330c}
+  .blueprint-number{font-family:"Playfair Display",Georgia,serif;font-weight:800;font-size:clamp(32px,2.1vw,42px);line-height:1;color:#f4b53d}
+  .blueprint-card h3{font-family:"Playfair Display",Georgia,serif;font-size:clamp(20px,1.35vw,26px);line-height:1.35;margin:3px 0 12px;color:#111b2b}
+  .blueprint-card p{font-size:clamp(16px,1.1vw,21px);line-height:1.55;color:#52647b;margin:0}
+
+  /* Third section: career journey timeline */
+  .journey-section{background:#111f39;color:#fff8ed;padding:64px 24px 82px}
+  .journey-inner{width:min(1536px,100%);margin:0 auto}
+  .journey-inner>h2{font-family:"Playfair Display",Georgia,serif;font-size:clamp(35px,3.15vw,54px);line-height:1.2;letter-spacing:-.025em;font-weight:800;margin:0 0 48px;color:#fff8ed}
+  .journey-arrow,.journey-gold{color:#f4bd4d}
+  .journey-timeline{position:relative;display:grid;gap:28px}
+  .journey-timeline:before{content:"";position:absolute;left:15px;top:16px;bottom:16px;width:1px;background:#3b4961}
+  .journey-step{position:relative;padding-left:51px}
+  .timeline-dot{position:absolute;left:5px;top:9px;width:18px;height:18px;background:#f4bd4d;border:2px solid #f4bd4d;border-radius:50%;box-shadow:0 0 0 5px #111f39}
+  .journey-card{background:#1e2b43;border:1px solid #344158;border-radius:24px;padding:31px 23px 27px;min-height:160px}
+  .step-label{display:block;color:#ffbd3e;font-size:15px;font-weight:700;letter-spacing:.12em;margin-bottom:15px}
+  .journey-card h3{font-family:"Playfair Display",Georgia,serif;font-size:clamp(22px,1.55vw,29px);line-height:1.3;margin:0 0 12px;color:#fff8ed}
+  .journey-card p{font-size:clamp(16px,1.15vw,21px);line-height:1.55;color:#cbd4e2;margin:0}
+
+  /* Second section */
+  .stuck-section{background:#fbf8f1;color:#111b2b}
+  .trust-strip{min-height:98px;padding:18px max(24px,calc((100% - 1536px)/2));display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:22px;align-items:start;border-bottom:1px solid #e5dfd3;background:#fbf6ec}
+  .trust-item{display:flex;justify-content:center;align-items:flex-start;gap:13px;font-size:clamp(14px,1.15vw,21px);line-height:1.4;color:#101c30}
+  .trust-icon{color:#f4a91f;font-size:25px;line-height:1;flex:0 0 auto}
+  .stuck-inner{width:min(1536px,100%);margin:0 auto;padding:96px 24px 72px}
+  .stuck-inner h2{font-family:"Playfair Display",Georgia,serif;font-size:clamp(36px,3vw,54px);line-height:1.22;letter-spacing:-.025em;color:#141d2b;margin:0 0 25px;font-weight:800}
+  .stuck-intro{font-size:clamp(17px,1.35vw,23px);line-height:1.6;color:#52647b;margin:0 0 48px}
+  .challenge-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+  .challenge-card{min-height:106px;padding:24px 25px;display:flex;align-items:flex-start;gap:19px;background:#fff;border:1px solid #e5ded2;border-radius:24px;box-shadow:0 3px 5px #14203308,0 14px 34px #1420330c}
+  .challenge-card p{margin:0;font-size:clamp(16px,1.12vw,21px);line-height:1.45;color:#111c2d}
+  .question-icon{width:22px;height:22px;flex:0 0 22px;border:2px solid #f4aa28;border-radius:50%;display:grid;place-items:center;color:#f4a51e;font-size:14px;font-weight:700;line-height:1;margin-top:2px}
+  .clarity-callout{margin-top:48px;padding:25px 26px;border-left:5px solid #f5b83e;border-radius:20px;background:#fff3d9;color:#102039;font-size:clamp(17px,1.25vw,22px);line-height:1.5}
+
+  @media(max-width:850px){
+    .transparency-section{padding:56px 22px 66px}
+    .transparency-card{padding:34px 30px;border-radius:23px}
+    .transparency-heading{gap:14px;margin-bottom:19px}
+    .transparency-heading h2{font-size:clamp(27px,4.5vw,34px)}
+    .transparency-lead,.transparency-copy{font-size:17px}
+    .checkout-section{padding:56px 22px 66px}
+    .checkout-card{width:min(1000px,100%)}
+    .checkout-body{padding:24px}
+    .value-section{padding:56px 22px 64px}
+    .value-inner>h2{font-size:clamp(34px,5.5vw,46px);margin-bottom:28px}
+    .value-row{min-height:70px;padding:18px 20px;font-size:16px}
+    .value-summary{padding:27px 23px;border-radius:22px}
+    .testimonials-section{padding:56px 22px 66px}
+    .testimonials-inner>h2{font-size:clamp(34px,5.5vw,46px);margin-bottom:32px}
+    .testimonial-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+    .testimonial-card{min-height:unset;padding:24px 22px;border-radius:20px}
+    .testimonial-card blockquote{font-size:16px}
+    .preview-section{padding:54px 22px 62px}
+    .preview-heading{margin-bottom:30px;gap:14px}
+    .preview-heading h2{font-size:clamp(34px,5.5vw,46px);margin-bottom:12px}
+    .preview-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+    .preview-card{min-height:unset;padding:23px 20px;border-radius:17px}
+    .preview-card h3{font-size:21px}
+    .preview-card li{font-size:16px}
+    .audience-section{padding:56px 22px 64px}
+    .audience-inner{grid-template-columns:1fr;gap:34px}
+    .audience-main h2{font-size:clamp(34px,5.5vw,46px);margin-bottom:28px}
+    .audience-list{gap:14px}
+    .audience-list li{font-size:17px;gap:15px}
+    .audience-note{min-height:unset;padding:27px 25px;border-radius:24px}
+    .audience-note h3{margin-bottom:18px}
+    .blueprint-section{padding:0 22px 60px}
+    .blueprint-inner>h2{font-size:clamp(34px,5.5vw,46px);margin-bottom:32px}
+    .blueprint-grid{gap:14px}
+    .blueprint-card{padding:23px 20px;gap:17px;border-radius:20px;min-height:unset}
+    .blueprint-card h3{font-size:21px;margin-bottom:9px}
+    .blueprint-card p{font-size:16px}
+    .journey-section{padding:52px 22px 64px}
+    .journey-inner>h2{font-size:clamp(34px,5.5vw,46px);margin-bottom:34px}
+    .journey-timeline{gap:20px}
+    .journey-card{min-height:unset;padding:25px 21px;border-radius:20px}
+    .journey-card h3{font-size:23px}
+    .trust-strip{grid-template-columns:repeat(2,minmax(0,1fr));padding:20px 24px;gap:18px}
+    .trust-item{justify-content:flex-start;font-size:15px}
+    .stuck-inner{padding:64px 24px 56px}
+    .challenge-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+    .challenge-card{padding:21px 18px;border-radius:18px}
+    .stuck-inner h2{font-size:clamp(34px,5vw,46px)}
+    .stuck-intro{margin-bottom:32px}
+    .offer-head{min-height:auto;padding:16px 16px 30px}.kicker{font-size:20px}.date-line{font-size:15px}
+    .announcement{font-size:16px}
+    .hero-inner{grid-template-columns:1fr;gap:46px;padding:52px 22px 60px}
+    .hero-copy{max-width:760px;margin:auto;width:100%}
+    .product-wrap{grid-row:2}
+    .book{width:min(290px,70%);transform:perspective(1000px) rotateY(-6deg)}
+    h1{font-size:clamp(42px,8vw,66px)}
+  }
+  @media(max-width:480px){
+    .transparency-section{padding:42px 16px 50px}
+    .transparency-card{padding:25px 21px;border-radius:19px}
+    .transparency-heading{align-items:flex-start;gap:11px;margin-bottom:17px}
+    .transparency-icon{flex-basis:28px;width:28px;height:28px}
+    .transparency-icon svg{width:28px;height:28px}
+    .transparency-heading h2{font-size:25px}
+    .transparency-lead,.transparency-copy{font-size:15px;line-height:1.65}
+    .transparency-lead{margin-bottom:19px}
+    .checkout-section{padding:42px 16px 50px}
+    .checkout-card{border-radius:20px}
+    .checkout-header{padding:23px 19px 20px}
+    .checkout-header h2{font-size:25px;max-width:320px}
+    .checkout-price strong{font-size:44px}
+    .checkout-body{padding:19px 16px 20px}
+    .offer-ended{padding:14px 10px}
+    .checkout-benefits li{font-size:13px}
+    .checkout-cta{font-size:13px;min-height:54px;padding:13px 10px}
+    .payment-panel{padding:10px 8px}
+    .payment-tab{font-size:10px;min-height:49px}
+    .payment-brands span{font-size:9px;padding:6px 7px}
+    .value-section{padding:44px 18px 50px}
+    .value-inner>h2{font-size:clamp(30px,8.5vw,39px);margin-bottom:23px}
+    .value-list{border-radius:18px}
+    .value-row{align-items:flex-start;flex-direction:column;gap:7px;padding:17px 17px;font-size:15px}
+    .value-amount{white-space:normal;font-size:14px}
+    .value-summary{margin-top:17px;padding:23px 19px;border-radius:19px}
+    .value-total{padding-bottom:16px;font-size:15px}
+    .value-strike{font-size:23px}
+    .value-today{padding-top:16px;font-size:15px}
+    .value-today strong{font-size:39px}
+    .value-summary p{font-size:13px;margin-top:19px}
+    .testimonials-section{padding:44px 18px 52px}
+    .testimonials-inner>h2{font-size:clamp(30px,8.5vw,39px);margin-bottom:25px}
+    .testimonial-desktop-break{display:none}
+    .testimonial-grid{grid-template-columns:1fr;gap:13px}
+    .testimonial-card{min-height:unset;padding:23px 20px;border-radius:17px}
+    .testimonial-stars{font-size:23px;margin-bottom:16px}
+    .testimonial-card blockquote{font-size:15px;line-height:1.6;margin-bottom:18px}
+    .testimonial-byline{font-size:14px}
+    .testimonial-note{font-size:13px}
+    .preview-section{padding:44px 18px 50px}
+    .preview-heading{display:block;margin-bottom:25px}
+    .preview-heading h2{font-size:clamp(31px,8.5vw,40px);margin-bottom:13px}
+    .preview-heading p{font-size:15px;margin-bottom:16px}
+    .preview-badge{font-size:12px;padding:9px 14px}
+    .preview-grid{grid-template-columns:1fr;gap:13px}
+    .preview-card{min-height:unset;padding:22px 19px;border-radius:16px}
+    .preview-label{font-size:12px;margin-bottom:12px}
+    .preview-card h3{font-size:21px;margin-bottom:14px}
+    .preview-card ul{gap:10px}
+    .preview-card li{font-size:15px}
+    .audience-section{padding:44px 18px 50px}
+    .audience-main h2{font-size:clamp(30px,8.5vw,39px);margin-bottom:23px}
+    .audience-list{gap:13px}
+    .audience-list li{font-size:15px;gap:12px}
+    .audience-check{font-size:21px;flex-basis:20px}
+    .audience-note{padding:23px 19px;border-radius:20px}
+    .audience-note h3{font-size:20px;gap:11px;margin-bottom:15px}
+    .audience-note p{font-size:15px;line-height:1.65;margin-bottom:15px}
+    .blueprint-section{padding:0 17px 48px}
+    .blueprint-inner>h2{font-size:clamp(30px,8.5vw,39px);margin-bottom:25px}
+    .blueprint-grid{grid-template-columns:1fr;gap:12px}
+    .blueprint-card{grid-template-columns:55px minmax(0,1fr);padding:21px 18px;gap:14px;border-radius:16px}
+    .blueprint-number{font-size:34px}
+    .blueprint-card h3{font-size:20px;margin-top:2px;margin-bottom:8px}
+    .blueprint-card p{font-size:15px;line-height:1.5}
+    .journey-section{padding:42px 17px 50px}
+    .journey-inner>h2{font-size:clamp(29px,8.5vw,38px);line-height:1.2;margin-bottom:28px}
+    .journey-arrow{white-space:nowrap}
+    .journey-timeline{gap:15px}
+    .journey-timeline:before{left:10px}
+    .journey-step{padding-left:34px}
+    .timeline-dot{left:2px;top:9px;width:17px;height:17px}
+    .journey-card{padding:21px 17px;border-radius:16px}
+    .step-label{font-size:12px;margin-bottom:11px}
+    .journey-card h3{font-size:21px;margin-bottom:8px}
+    .journey-card p{font-size:15px}
+    .trust-strip{grid-template-columns:1fr;gap:14px;padding:19px 20px}
+    .trust-item{font-size:15px;gap:12px}
+    .desktop-break{display:none}
+    .stuck-inner{padding:48px 18px 44px}
+    .stuck-inner h2{font-size:clamp(31px,9vw,40px);margin-bottom:18px}
+    .stuck-intro{font-size:16px;margin-bottom:26px}
+    .challenge-grid{grid-template-columns:1fr;gap:12px}
+    .challenge-card{min-height:unset;padding:19px 17px;gap:14px;border-radius:16px}
+    .challenge-card p{font-size:16px}
+    .clarity-callout{margin-top:28px;padding:20px 18px;border-radius:14px;font-size:16px}
+    .offer-pill{font-size:11px;padding:8px 14px;letter-spacing:.09em}.kicker{font-size:17px;margin-bottom:15px}
+    .offer-status{font-size:34px;margin-bottom:14px}.date-line{font-size:13px;gap:8px}
+    .announcement{font-size:14px;padding:11px 12px}
+    .hero-inner{padding:40px 18px 48px;gap:36px}
+    .eyebrow{font-size:11px;padding:8px 12px;margin-bottom:20px}
+    h1{font-size:clamp(37px,10.5vw,49px);line-height:1.12}
+    .subtitle{font-size:16px;line-height:1.65}
+    .benefits{font-size:15px}
+    .cta-row{display:grid;grid-template-columns:1fr}
+    .btn{width:100%;font-size:15px}
+    .book{width:min(250px,78%);padding:25px 18px}.book-symbol{width:75px;height:75px;font-size:35px;margin-bottom:22px}
+    .below{padding:50px 20px}
+  }
+  @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
+
+  /* FAQ section with accessible, native expandable answers */
+  .faq-section{background:#fbf9f3;color:#111b2b;padding:70px 24px 86px}
+  .faq-inner{width:min(1082px,100%);margin:0 auto}
+  .faq-inner>h2{font-family:"Playfair Display",Georgia,serif;font-size:clamp(36px,3.2vw,56px);line-height:1.2;letter-spacing:-.025em;font-weight:800;margin:0 0 38px;color:#141d2b}
+  .faq-list{border-top:0}
+  .faq-item{border-bottom:1px solid #e4ded4}
+  .faq-item summary{position:relative;list-style:none;cursor:pointer;padding:23px 36px 23px 0;font-family:"Playfair Display",Georgia,serif;font-weight:700;font-size:clamp(17px,1.25vw,22px);line-height:1.4;color:#111b2b}
+  .faq-item summary::-webkit-details-marker{display:none}
+  .faq-item summary:after{content:"";position:absolute;right:8px;top:calc(50% - 4px);width:8px;height:8px;border-right:1.8px solid #526078;border-bottom:1.8px solid #526078;transform:rotate(45deg);transition:transform .18s ease}
+  .faq-item[open] summary:after{transform:rotate(225deg);top:calc(50% - 1px)}
+  .faq-item summary:focus-visible{outline:2px solid #f0b338;outline-offset:4px;border-radius:4px}
+  .faq-answer{padding:0 36px 20px 0;color:#52647b;font-size:clamp(15px,1.1vw,19px);line-height:1.7}
+  .faq-answer p{margin:0}
+  @media(max-width:850px){
+    .faq-section{padding:54px 22px 64px}
+    .faq-inner>h2{font-size:clamp(34px,5.5vw,46px);margin-bottom:27px}
+    .faq-item summary{font-size:18px;padding:21px 34px 21px 0}
+    .faq-answer{font-size:16px}
+  }
+  @media(max-width:480px){
+    .faq-section{padding:43px 18px 50px}
+    .faq-inner>h2{font-size:clamp(30px,8.5vw,39px);margin-bottom:22px}
+    .faq-item summary{font-size:17px;padding:19px 30px 19px 0}
+    .faq-item summary:after{right:5px}
+    .faq-answer{font-size:15px;padding:0 8px 18px 0}
+  }
+
+
+  /* Final CTA and footer */
+  .final-cta-section{background:#111f39;color:#fff8ed;padding:52px 24px 0;min-height:690px;display:flex;flex-direction:column}
+  .final-cta-content{width:min(900px,100%);margin:0 auto;text-align:center;padding:0 0 80px}
+  .final-cta-content h2{font-family:"Playfair Display",Georgia,serif;font-size:clamp(36px,3.25vw,56px);line-height:1.2;letter-spacing:-.025em;font-weight:800;color:#fff8ed;max-width:900px;margin:0 auto 29px}
+  .final-cta-subtitle{font-size:clamp(17px,1.3vw,22px);line-height:1.75;color:#cbd4e2;margin:0 auto 31px;max-width:720px}
+  .final-cta-price{display:flex;align-items:baseline;justify-content:center;gap:17px;margin-bottom:30px}
+  .final-cta-price del{font-size:clamp(19px,1.5vw,26px);color:#aebbd0}
+  .final-cta-price strong{font-family:"Playfair Display",Georgia,serif;font-size:clamp(48px,4.4vw,72px);line-height:1;color:#f4bd4d}
+  .final-cta-price span{font-size:18px;color:#cbd4e2}
+  .final-cta-button{display:flex;align-items:center;justify-content:center;max-width:660px;min-height:88px;padding:22px 28px;margin:0 auto 17px;background:#f3b941;color:#111f39;border-radius:23px;text-decoration:none;font-size:clamp(17px,1.5vw,25px);line-height:1.4;font-weight:700;box-shadow:0 14px 32px #f3b94124;transition:transform .2s,background .2s}
+  .final-cta-button:hover{transform:translateY(-2px);background:#ffca55}
+  .final-cta-trust{font-size:16px;line-height:1.5;color:#cbd4e2;margin:0}
+  .final-cta-trust span{padding:0 5px;color:#f4bd4d}
+  .site-footer{margin-top:auto}
+  .site-footer-inner{width:min(1500px,100%);margin:0 auto;border-top:1px solid #344158;padding:28px 0 23px}
+  .site-footer-inner h3{font-family:"Playfair Display",Georgia,serif;font-size:25px;line-height:1.3;color:#fff8ed;margin:0 0 27px}
+  .site-footer-inner nav{display:flex;flex-wrap:wrap;gap:18px 30px}
+  .site-footer-inner nav a{font-size:17px;line-height:1.5;color:#cbd4e2;text-decoration:none}
+  .site-footer-inner nav a:hover{text-decoration:underline;text-underline-offset:4px;color:#fff8ed}
+  @media(max-width:850px){
+    .final-cta-section{min-height:unset;padding:48px 22px 0}
+    .final-cta-content{padding-bottom:62px}
+    .final-cta-content h2{font-size:clamp(34px,5.5vw,46px)}
+    .final-cta-subtitle{font-size:17px}
+    .final-cta-break{display:none}
+    .final-cta-button{min-height:70px;border-radius:18px}
+    .site-footer-inner{padding:25px 0 23px}
+    .site-footer-inner nav{gap:14px 22px}
+  }
+  @media(max-width:480px){
+    .final-cta-section{padding:39px 18px 0}
+    .final-cta-content{padding-bottom:45px}
+    .final-cta-content h2{font-size:clamp(30px,8.5vw,39px);margin-bottom:20px}
+    .final-cta-subtitle{font-size:15px;line-height:1.65;margin-bottom:25px}
+    .final-cta-price{gap:12px;margin-bottom:24px}
+    .final-cta-price strong{font-size:49px}
+    .final-cta-price del{font-size:18px}
+    .final-cta-price span{font-size:15px}
+    .final-cta-button{min-height:62px;padding:15px 17px;font-size:15px;border-radius:15px}
+    .final-cta-trust{font-size:12px}
+    .site-footer-inner{padding:22px 0 20px}
+    .site-footer-inner h3{font-size:21px;margin-bottom:19px}
+    .site-footer-inner nav{gap:12px 18px}
+    .site-footer-inner nav a{font-size:14px}
+  }
+
+
+  .site-footer-extra{width:min(1500px,100%);margin:0 auto;color:#aebbd0}
+  .site-footer-support{margin:23px 0 22px;font-size:15px;line-height:1.5}
+  .site-footer-support a{color:#aebbd0;text-decoration:underline;text-underline-offset:3px;overflow-wrap:anywhere}
+  .site-footer-legal{border-top:1px solid #344158;padding:23px 0 25px}
+  .site-footer-legal p{margin:0;font-size:15px;line-height:1.7;color:#aebbd0}
+  @media(max-width:850px){
+    .site-footer-support{margin:20px 0;font-size:14px}
+    .site-footer-legal{padding:19px 0 22px}
+    .site-footer-legal p{font-size:14px}
+  }
+  @media(max-width:480px){
+    .site-footer-support{font-size:13px;margin:17px 0}
+    .site-footer-legal{padding:17px 0 20px}
+    .site-footer-legal p{font-size:12px;line-height:1.65}
+  }
+
+
+  /* Live launch timer in the first/hero section */
+  .launch-timer{width:100%;margin:0 auto 24px;padding:28px 18px 24px;text-align:center;background:linear-gradient(180deg,#292e38 0%,#18243a 100%);color:#f8f3e8}
+  .launch-timer-pill{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:9px 20px;border:1px solid #8c6c2b;border-radius:999px;color:#ffbd36;font-size:14px;font-weight:700;letter-spacing:.15em}
+  .launch-timer-kicker{margin:18px 0 4px;font-family:"Playfair Display",Georgia,serif;font-weight:700;font-size:clamp(16px,1.4vw,23px);letter-spacing:.02em}
+  .launch-timer-clock{font-family:"Playfair Display",Georgia,serif;font-size:clamp(58px,6vw,104px);font-weight:800;line-height:1.15;letter-spacing:.015em;color:#f4c65c;font-variant-numeric:tabular-nums}
+  .launch-timer-date{display:flex;align-items:center;justify-content:center;gap:10px;margin-top:12px;color:#cbd4e2;font-size:clamp(13px,1.1vw,18px)}
+  .launch-timer-date span{color:#f4bd4d;font-size:12px}
+  @media(max-width:700px){
+    .launch-timer{padding:22px 14px 20px;margin-bottom:18px}
+    .launch-timer-pill{font-size:11px;padding:8px 13px;letter-spacing:.1em}
+    .launch-timer-kicker{font-size:15px;margin-top:15px}
+    .launch-timer-clock{font-size:clamp(54px,15vw,76px)}
+    .launch-timer-date{font-size:12px;gap:7px;flex-wrap:wrap}
+  }
+
+</style>
+</head>
+<body>
+
+
+
+<div class="announcement">
+  🎯 Special Launch Offer: Career Clarity Blueprint at just
+  <del>₹799</del>
+  <strong>₹349</strong> today!</br>
+
+  <span class="countdown">
+    ⏳ Offer ends in:
+    <span id="countdown">05:00:00</span>
+  </span>
+</div>
+
+<main>
+  <section class="hero">
+
+    <div class="launch-timer" id="launch-offer-timer" aria-label="Launch offer countdown">
+      <div class="launch-timer-pill">&#x1F525;<span>LIVE OFFER — 349 INR</span></div>
+      <div class="launch-timer-kicker">LAUNCH PRICE HOLDS FOR</div>
+      <div class="launch-timer-clock" id="launch-countdown" role="timer" aria-live="off">18:38</div>
+      <div class="launch-timer-date"><span aria-hidden="true">●</span><time id="launch-date-time"></time></div>
+    </div>
+
+    <div class="hero-inner">
+      <div class="hero-copy">
+        <div class="eyebrow">THE CAREER CLARITY BLUEPRINT</div>
+        <h1>Stop Guessing About Your Career. <span class="gold">Start Building One You Actually Love.</span></h1>
+        <p class="subtitle">Get clarity on what you’re good at, what matters to you, and which career direction fits your strengths—so you can move forward with confidence.</p>
+        <ul class="benefits">
+          <li><span class="check">✓</span><span>Discover your strengths, interests, and values</span></li>
+          <li><span class="check">✓</span><span>Explore career paths that fit the real you</span></li>
+          <li><span class="check">✓</span><span>Turn uncertainty into a practical next-step plan</span></li>
+        </ul>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="#get-started">Get the Blueprint for ₹349 <span aria-hidden="true">→</span></a>
+          <a class="btn btn-secondary" href="#learn-more">See What’s Included</a>
+        </div>
+        <p class="price-note">One-time payment · Instant access · Start at your own pace</p>
+      </div>
+      
+        <div class="product-wrap" aria-label="Career Clarity Blueprint book cover">
+        <img
+          src="assets/img/book1.1.jpeg"
+          alt="Career Clarity Blueprint by Dr. Lalit Khatri"
+          class="book-image"
+        />
+        </div>
+          
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 2: Career-choice pain points (based on the second screenshot) -->
+  <section class="stuck-section" id="career-challenges">
+    <div class="trust-strip" aria-label="Product benefits">
+      <div class="trust-item"><span class="trust-icon" aria-hidden="true">ϟ</span><span>Instant Digital Access</span></div>
+      <div class="trust-item"><span class="trust-icon" aria-hidden="true">☷</span><span>Practical Step-by-Step<br class="desktop-break"> Framework</span></div>
+      <div class="trust-item"><span class="trust-icon" aria-hidden="true">♧</span><span>Secure Razorpay Checkout</span></div>
+      <div class="trust-item"><span class="trust-icon" aria-hidden="true">▯</span><span>Read on Phone, Tablet or Laptop</span></div>
+    </div>
+    <div class="stuck-inner">
+      <h2>Feeling Stuck Between Too Many<br class="desktop-break"> Career Choices?</h2>
+      <p class="stuck-intro">You may be capable of many things — but that doesn’t mean every career is right for you.</p>
+      <div class="challenge-grid">
+        <article class="challenge-card"><span class="question-icon" aria-hidden="true">?</span><p>“I don’t know what career suits me.”</p></article>
+        <article class="challenge-card"><span class="question-icon" aria-hidden="true">?</span><p>“I keep changing my mind.”</p></article>
+        <article class="challenge-card"><span class="question-icon" aria-hidden="true">?</span><p>“I chose a path because others expected it.”</p></article>
+        <article class="challenge-card"><span class="question-icon" aria-hidden="true">?</span><p>“I’m scared I'll make the wrong decision.”</p></article>
+        <article class="challenge-card"><span class="question-icon" aria-hidden="true">?</span><p>“I have interests, but no clear direction.”</p></article>
+        <article class="challenge-card"><span class="question-icon" aria-hidden="true">?</span><p>“I want a career that fits my life — not just my resume.”</p></article>
+      </div>
+      <div class="clarity-callout">You don’t need more random advice. You need a clear process.</div>
+    </div>
+  </section>
+
+
+  <!-- Section 3: Career clarity step-by-step timeline -->
+  <section class="journey-section" id="career-journey">
+    <div class="journey-inner">
+      <h2>From Career Confusion <span class="journey-arrow">→</span> <span class="journey-gold">Career Clarity</span></h2>
+      <div class="journey-timeline">
+        <article class="journey-step">
+          <span class="timeline-dot" aria-hidden="true"></span>
+          <div class="journey-card">
+            <span class="step-label">STEP 1</span>
+            <h3>Understand Yourself</h3>
+            <p>Identify strengths, interests, values and working preferences.</p>
+          </div>
+        </article>
+        <article class="journey-step">
+          <span class="timeline-dot" aria-hidden="true"></span>
+          <div class="journey-card">
+            <span class="step-label">STEP 2</span>
+            <h3>Discover Your Direction</h3>
+            <p>Connect what you know about yourself with realistic career possibilities.</p>
+          </div>
+        </article>
+        <article class="journey-step">
+          <span class="timeline-dot" aria-hidden="true"></span>
+          <div class="journey-card">
+            <span class="step-label">STEP 3</span>
+            <h3>Evaluate Your Options</h3>
+            <p>Compare career paths using practical criteria instead of guesswork.</p>
+          </div>
+        </article>
+        <article class="journey-step">
+          <span class="timeline-dot" aria-hidden="true"></span>
+          <div class="journey-card">
+            <span class="step-label">STEP 4</span>
+            <h3>Make a Confident Decision</h3>
+            <p>Build a decision framework that reduces overthinking.</p>
+          </div>
+        </article>
+        <article class="journey-step">
+          <span class="timeline-dot" aria-hidden="true"></span>
+          <div class="journey-card">
+            <span class="step-label">STEP 5</span>
+            <h3>Create Your Action Plan</h3>
+            <p>Turn clarity into concrete next steps.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Section 4: What's inside the Career Clarity Blueprint -->
+  <section class="blueprint-section" id="blueprint-includes">
+    <div class="blueprint-inner">
+      <h2>Inside Career Clarity Blueprint</h2>
+      <div class="blueprint-grid">
+        <article class="blueprint-card">
+          <span class="blueprint-number">01</span>
+          <div><h3>Know Yourself</h3><p>Discover the factors that should influence your career choice.</p></div>
+        </article>
+        <article class="blueprint-card">
+          <span class="blueprint-number">02</span>
+          <div><h3>Identify Your Strengths</h3><p>Understand the skills and qualities you can build your career around.</p></div>
+        </article>
+        <article class="blueprint-card">
+          <span class="blueprint-number">03</span>
+          <div><h3>Clarify Your Values</h3><p>Figure out what actually matters to you in work and life.</p></div>
+        </article>
+        <article class="blueprint-card">
+          <span class="blueprint-number">04</span>
+          <div><h3>Explore Career Paths</h3><p>Learn how to research and compare potential career directions.</p></div>
+        </article>
+        <article class="blueprint-card">
+          <span class="blueprint-number">05</span>
+          <div><h3>Avoid Common Career Traps</h3><p>Recognize decisions driven by pressure, trends or comparison.</p></div>
+        </article>
+        <article class="blueprint-card">
+          <span class="blueprint-number">06</span>
+          <div><h3>Choose With Confidence</h3><p>Use a structured framework to evaluate your options.</p></div>
+        </article>
+        <article class="blueprint-card">
+          <span class="blueprint-number">07</span>
+          <div><h3>Build Your Career Roadmap</h3><p>Turn your decision into an actionable plan.</p></div>
+        </article>
+        <article class="blueprint-card">
+          <span class="blueprint-number">08</span>
+          <div><h3>Take Your First Steps</h3><p>Know what to do after you finally have clarity.</p></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Section 5: Who this guide is for -->
+  <section class="audience-section" id="who-this-guide-is-for">
+    <div class="audience-inner">
+      <div class="audience-main">
+        <h2>This Guide Is For You If...</h2>
+        <ul class="audience-list">
+          <li><span class="audience-check" aria-hidden="true">✓</span><span>You're a student trying to choose a career direction</span></li>
+          <li><span class="audience-check" aria-hidden="true">✓</span><span>You're a graduate unsure what to do next</span></li>
+          <li><span class="audience-check" aria-hidden="true">✓</span><span>You're considering a career switch</span></li>
+          <li><span class="audience-check" aria-hidden="true">✓</span><span>You feel stuck in your current career</span></li>
+          <li><span class="audience-check" aria-hidden="true">✓</span><span>You're overwhelmed by too many options</span></li>
+          <li><span class="audience-check" aria-hidden="true">✓</span><span>You want more meaningful work</span></li>
+          <li><span class="audience-check" aria-hidden="true">✓</span><span>You want a practical framework instead of vague motivation</span></li>
+        </ul>
+      </div>
+      <aside class="audience-note">
+        <h3><span class="audience-info" aria-hidden="true">i</span>Who this is not for</h3>
+        <p>Not for people looking for a magic career test that instantly tells them what to become.</p>
+        <p>Career clarity takes reflection and action. This guide gives you the framework to do both.</p>
+      </aside>
+    </div>
+  </section>
+
+
+  <!-- Section 6: Preview pages -->
+  <section class="preview-section" id="preview-pages">
+    <div class="preview-inner">
+      <div class="preview-heading">
+        <div>
+          <h2>A Look Inside</h2>
+          <p>Sample layouts showing the style of exercises used throughout the guide.</p>
+        </div>
+        <a class="preview-badge" href="#preview-pages">PREVIEW PAGES</a>
+      </div>
+      <div class="preview-grid">
+        <article class="preview-card">
+          <span class="preview-label">PREVIEW PAGE</span>
+          <h3>Self-Assessment Prompts</h3>
+          <ul>
+            <li>What kind of work makes you lose track of time?</li>
+            <li>Which tasks drain you, even when you’re good at them?</li>
+            <li>What do people consistently rely on you for?</li>
+          </ul>
+        </article>
+        <article class="preview-card">
+          <span class="preview-label">PREVIEW PAGE</span>
+          <h3>Strengths Mapping Grid</h3>
+          <ul>
+            <li>List skills you enjoy using</li>
+            <li>Rate them: energy · ability · demand</li>
+            <li>Circle the overlap — that’s your starting zone</li>
+          </ul>
+        </article>
+        <article class="preview-card">
+          <span class="preview-label">PREVIEW PAGE</span>
+          <h3>Career Options Comparison</h3>
+          <ul>
+            <li>Score each path on fit, growth, lifestyle and effort</li>
+            <li>Compare scores instead of gut feelings</li>
+            <li>Shortlist your top two directions</li>
+          </ul>
+        </article>
+        <article class="preview-card">
+          <span class="preview-label">PREVIEW PAGE</span>
+          <h3>30-Day Action Plan</h3>
+          <ul>
+            <li>Week 1: Research and conversations</li>
+            <li>Week 2–3: Small real-world tests</li>
+            <li>Week 4: Review and commit to a next step</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Section 7: Reader testimonials (replace placeholders with genuine reviews) -->
+  <section class="testimonials-section" id="reader-feedback">
+    <div class="testimonials-inner">
+      <h2>Readers Are Using It To Get Clearer<br class="testimonial-desktop-break"> About Their Next Step</h2>
+      <div class="testimonial-grid">
+        <article class="testimonial-card">
+          <div class="testimonial-stars" aria-label="5 stars">★★★★★</div>
+          <blockquote>[Replace with a verified customer testimonial about gaining clarity around career options.]</blockquote>
+          <p class="testimonial-byline">— [Verified Customer Name], [City]</p>
+          <p class="testimonial-note">Placeholder — replace with a genuine verified review.</p>
+        </article>
+        <article class="testimonial-card">
+          <div class="testimonial-stars" aria-label="5 stars">★★★★★</div>
+          <blockquote>[Replace with a verified testimonial from a student/graduate.]</blockquote>
+          <p class="testimonial-byline">— [Verified Customer Name], [City]</p>
+          <p class="testimonial-note">Placeholder — replace with a genuine verified review.</p>
+        </article>
+        <article class="testimonial-card">
+          <div class="testimonial-stars" aria-label="5 stars">★★★★★</div>
+          <blockquote>[Replace with a verified testimonial from someone considering a career switch.]</blockquote>
+          <p class="testimonial-byline">— [Verified Customer Name], [City]</p>
+          <p class="testimonial-note">Placeholder — replace with a genuine verified review.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Section 8: What's included and offer pricing -->
+  <section class="value-section" id="what-you-get">
+    <div class="value-inner">
+      <h2>More Than Just An Ebook</h2>
+      <div class="value-list">
+        <div class="value-row"><span>Career Clarity Blueprint</span><span class="value-amount">Value: ₹799</span></div>
+        <div class="value-row"><span>Career Self-Assessment Worksheets</span><span class="value-amount value-unpublished">Value not published</span></div>
+        <div class="value-row"><span>Career Decision Framework</span><span class="value-amount value-unpublished">Value not published</span></div>
+        <div class="value-row"><span>Personal Career Roadmap Template</span><span class="value-amount value-unpublished">Value not published</span></div>
+      </div>
+      <div class="value-summary">
+        <div class="value-total"><span>Total confirmed value</span><span class="value-strike">₹799</span></div>
+        <div class="value-today"><span>Today</span><strong>₹349</strong></div>
+        <p>Only materials that genuinely ship with this product are priced above.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Section 9: Checkout card -->
+  <section class="checkout-section" id="checkout">
+    <div class="checkout-card">
+      <header class="checkout-header">
+        <h2>Get Career Clarity Blueprint Today</h2>
+        <div class="checkout-price"><del>₹799</del><strong>₹349</strong></div>
+        <p>One-time payment</p>
+      </header>
+      <div class="checkout-body">
+        <div class="offer-ended">
+          <span class="offer-ended-label">OFFER WINDOW ENDED</span>
+          <strong>Refresh the page to reactivate the launch price.</strong>
+          <small id="checkoutDate">Today · 13 October 2026</small>
+        </div>
+        <ul class="checkout-benefits">
+          <li><span aria-hidden="true">♧</span>Complete 8-part career clarity framework</li>
+          <li><span aria-hidden="true">ϟ</span>Instant download after verified payment</li>
+          <li><span aria-hidden="true">♢</span>Payment verified server-side before access</li>
+        </ul>
+        <a class="checkout-cta" href="#get-started">YES — I WANT CAREER CLARITY</a>
+        <div class="payment-panel">
+          <div class="payment-title"><span aria-hidden="true">♙</span> PAY SECURELY VIA RAZORPAY</div>
+          <div class="payment-tabs" role="tablist" aria-label="Payment methods">
+            <button class="payment-tab is-active" type="button" role="tab" aria-selected="true" data-method="upi"><span aria-hidden="true">▯</span>UPI</button>
+            <button class="payment-tab" type="button" role="tab" aria-selected="false" data-method="cards"><span aria-hidden="true">▤</span>Cards</button>
+            <button class="payment-tab" type="button" role="tab" aria-selected="false" data-method="netbanking"><span aria-hidden="true">▥</span>Netbanking</button>
+            <button class="payment-tab" type="button" role="tab" aria-selected="false" data-method="wallets"><span aria-hidden="true">▣</span>Wallets</button>
+          </div>
+          <div class="payment-detail" aria-live="polite">
+            <p id="paymentDescription">Pay instantly from any UPI app.</p>
+            <div class="payment-brands" id="paymentBrands">
+              <span>Google Pay</span><span>PhonePe</span><span>Paytm</span><span>BHIM</span><span>Amazon Pay</span>
+            </div>
+          </div>
+        </div>
+        <p class="checkout-secure">&#x1F512; Secure payment via Razorpay</p>
+        <p class="checkout-redirect">After successful payment, you'll be redirected to your download page.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Section 10: Transparent purchase and support -->
+  <section class="transparency-section" id="purchase-info">
+    <div class="transparency-card">
+      <div class="transparency-heading">
+        <span class="transparency-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" role="img" aria-label="Shield">
+            <path d="M12 3 19 6v5.2c0 4.6-2.9 7.8-7 9.8-4.1-2-7-5.2-7-9.8V6l7-3Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+            <path d="m9 12 2 2 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </span>
+        <h2>Simple, Transparent Purchase</h2>
+      </div>
+      <p class="transparency-lead">Get instant access to the digital ebook after your payment is successfully verified.</p>
+      <p class="transparency-copy">This is a digital product delivered instantly after payment verification. If you have any issue with your purchase, contact us and we will help. Reach us at <a href="mailto:support@example.com">support@example.com</a>.</p>
+    </div>
+  </section>
+
+
+  <!-- Section: Frequently Asked Questions -->
+  <section class="faq-section" id="faq">
+    <div class="faq-inner">
+      <h2>Frequently Asked Questions</h2>
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary>Is this an ebook or physical book?</summary>
+          <div class="faq-answer"><p>It is a digital ebook. No physical book will be shipped.</p></div>
+        </details>
+        <details class="faq-item">
+          <summary>When will I receive it?</summary>
+          <div class="faq-answer"><p>You’ll receive access to the digital download after your payment has been successfully verified.</p></div>
+        </details>
+        <details class="faq-item">
+          <summary>Can I read it on my phone?</summary>
+          <div class="faq-answer"><p>Yes. You can read the digital guide on a compatible phone, tablet, or computer.</p></div>
+        </details>
+        <details class="faq-item">
+          <summary>Is this suitable for students?</summary>
+          <div class="faq-answer"><p>Yes. It is designed to help students, graduates, and people exploring a career change think through their options using a structured framework.</p></div>
+        </details>
+        <details class="faq-item">
+          <summary>Is this a career aptitude test?</summary>
+          <div class="faq-answer"><p>No. It is a practical career-reflection guide, not a test that automatically tells you which career to choose.</p></div>
+        </details>
+        <details class="faq-item">
+          <summary>What payment methods are available?</summary>
+          <div class="faq-answer"><p>Available methods depend on the payment options enabled at checkout. If you use Razorpay, supported methods may include UPI, cards, netbanking, and wallets.</p></div>
+        </details>
+        <details class="faq-item">
+          <summary>Can I get a refund?</summary>
+          <div class="faq-answer"><p>Please review the refund policy shown at checkout or contact customer support before purchasing if you have questions about eligibility.</p></div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+
+  
+
+
+  
+</main>
+<script>
+  // The screenshot shows an expired launch offer. Keep that status by default.
+  // To enable a live countdown, set OFFER_END to a future date and uncomment the update logic below.
+  const OFFER_END = null; // Example: new Date('2026-10-20T23:59:00+05:30')
+  const statusEl = document.getElementById('offerStatus');
+  const dateEl = document.getElementById('offerDate');
+
+  if (OFFER_END instanceof Date && !Number.isNaN(OFFER_END.getTime())) {
+    const formatDate = date => new Intl.DateTimeFormat('en-IN', {
+      weekday:'long', day:'numeric', month:'long', year:'numeric',
+      hour:'numeric', minute:'2-digit', timeZone:'Asia/Kolkata'
+    }).format(date) + ' IST';
+    const updateOffer = () => {
+      const remaining = OFFER_END.getTime() - Date.now();
+      if (remaining <= 0) {
+        statusEl.textContent = 'Offer window ended';
+        dateEl.textContent = formatDate(OFFER_END);
+        return;
+      }
+      const hours = Math.floor(remaining / 3600000);
+      const minutes = Math.floor((remaining % 3600000) / 60000);
+      const seconds = Math.floor((remaining % 60000) / 1000);
+      statusEl.textContent = `${hours}h ${minutes}m ${seconds}s remaining`;
+      dateEl.textContent = `Offer ends ${formatDate(OFFER_END)}`;
+    };
+    updateOffer();
+    window.setInterval(updateOffer, 1000);
+  }
+
+  // Checkout payment-method tabs are a visual preview only. Connect Razorpay
+  // Checkout on your server before accepting payments or granting downloads.
+  const paymentCopy = {
+    upi: { description: 'Pay instantly from any UPI app.', brands: ['Google Pay', 'PhonePe', 'Paytm', 'BHIM', 'Amazon Pay'] },
+    cards: { description: 'Pay using an eligible debit or credit card.', brands: ['Visa', 'Mastercard', 'RuPay', 'American Express'] },
+    netbanking: { description: 'Choose your bank to continue with netbanking.', brands: ['SBI', 'HDFC Bank', 'ICICI Bank', 'Axis Bank'] },
+    wallets: { description: 'Select a supported wallet at secure checkout.', brands: ['Paytm', 'Amazon Pay', 'Mobikwik', 'Freecharge'] }
+  };
+  document.querySelectorAll('.payment-tab').forEach(tab => {
+    tab.addEventListener('click', () => {
+      document.querySelectorAll('.payment-tab').forEach(other => {
+        const active = other === tab;
+        other.classList.toggle('is-active', active);
+        other.setAttribute('aria-selected', String(active));
+      });
+      const method = paymentCopy[tab.dataset.method];
+      if (!method) return;
+      document.getElementById('paymentDescription').textContent = method.description;
+      const brands = document.getElementById('paymentBrands');
+      brands.replaceChildren(...method.brands.map(name => {
+        const span = document.createElement('span');
+        span.textContent = name;
+        return span;
+      }));
+    });
+  });
+
+</script>
+
+<section class="final-cta-section" id="final-cta">
+    <div class="final-cta-content">
+      <h2>Your Career Doesn't Have To Be A Guess.</h2>
+      <p class="final-cta-subtitle">Start creating clarity around what you want, why you want it, and<br class="final-cta-break"> what to do next.</p>
+      <div class="final-cta-price"><del>₹799</del><strong>₹349</strong><span>today</span></div>
+      <a class="final-cta-button" href="#checkout">Get the Career Clarity Blueprint — ₹349</a>
+      <p class="final-cta-trust">🔒 Secure payment via Razorpay <span aria-hidden="true">·</span> Instant digital access</p>
+    </div>
+    <footer class="site-footer">
+      <div class="site-footer-inner">
+        <h3>Career Clarity Blueprint</h3>
+        <nav aria-label="Footer navigation">
+          <a href="#privacy-policy">Privacy Policy</a>
+          <a href="#terms">Terms &amp; Conditions</a>
+          <a href="#refund-policy">Refund Policy</a>
+          <a href="mailto:support@example.com">Contact</a>
+        </nav>
+      </div>
+
+      <div class="site-footer-extra">
+        <p class="site-footer-support">Support: <a href="mailto:support@example.com">support@example.com</a></p>
+        <div class="site-footer-legal">
+          <p>© 2026 Career Clarity Blueprint. All rights reserved. This guide provides educational career-planning frameworks, not guaranteed career outcomes.</p>
+        </div>
+      </div>
+    </footer>
+  </section>
+
+<script>
+(() => {
+  const countdown = document.getElementById("launch-countdown");
+  const dateTime = document.getElementById("launch-date-time");
+  if (!countdown || !dateTime) return;
+
+  // Requested countdown: 13 minutes and 18 seconds from page load.
+  let remainingSeconds = 13 * 60 + 18;
+
+  const dateFormatter = new Intl.DateTimeFormat("en-IN", {
+    weekday: "long", day: "numeric", month: "long", year: "numeric",
+    hour: "numeric", minute: "2-digit", hour12: true, timeZone: "Asia/Kolkata"
+  });
+
+  function updateLaunchTimer() {
+    const now = Date.now();
+    const minutes = Math.floor(remainingSeconds / 60);
+    const seconds = remainingSeconds % 60;
+
+    countdown.textContent =
+      `${String(minutes).padStart(2, "0")}:${String(seconds).padStart(2, "0")}`;
+
+    dateTime.dateTime = new Date(now).toISOString();
+    dateTime.textContent = dateFormatter.format(new Date(now)) + " IST";
+  }
+
+  updateLaunchTimer();
+  const timerInterval = window.setInterval(() => {
+    if (remainingSeconds > 0) remainingSeconds -= 1;
+    updateLaunchTimer();
+    if (remainingSeconds <= 0) {
+      window.clearInterval(timerInterval);
+      countdown.textContent = "00:00";
+      const kicker = document.querySelector(".launch-timer-kicker");
+      if (kicker) kicker.textContent = "OFFER WINDOW ENDED";
+      const pillText = document.querySelector(".launch-timer-pill span");
+      if (pillText) pillText.textContent = "OFFER ENDED";
+    }
+  }, 1000);
+})();
+
+
+
+let timeLeft = 5 * 60 * 60; // 5 hours
+
+const countdown = document.getElementById("countdown");
+
+const timer = setInterval(() => {
+  const hours = Math.floor(timeLeft / 3600);
+  const minutes = Math.floor((timeLeft % 3600) / 60);
+  const seconds = timeLeft % 60;
+
+  countdown.textContent =
+    String(hours).padStart(2, "0") + ":" +
+    String(minutes).padStart(2, "0") + ":" +
+    String(seconds).padStart(2, "0");
+
+  if (timeLeft <= 0) {
+    clearInterval(timer);
+    countdown.textContent = "Offer ended!";
+    return;
+  }
+
+  timeLeft--;
+}, 1000);
+
+</script>
+
+</body>
+</html>
